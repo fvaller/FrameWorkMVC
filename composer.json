@@ -4,5 +4,8 @@
 			"FrameworkAULA\\":"frameworkAULA/",
 			"App\\": "app/"
 		}
+	},
+	"require": {
+		"klein/klein": "^2.1"
 	}
 }

@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInit2fcd206f6c56b27544a88df3b802d620
 {
     public static $prefixLengthsPsr4 = array (
+        'K' => 
+        array (
+            'Klein\\' => 6,
+        ),
         'F' => 
         array (
             'FrameworkAULA\\' => 14,
@@ -18,6 +22,10 @@ class ComposerStaticInit2fcd206f6c56b27544a88df3b802d620
     );
 
     public static $prefixDirsPsr4 = array (
+        'Klein\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/klein/klein/src/Klein',
+        ),
         'FrameworkAULA\\' => 
         array (
             0 => __DIR__ . '/../..' . '/frameworkAULA',
