@@ -2,7 +2,7 @@
 
 namespace FrameworkAULA\Routing;
 
-class Route extends \Klein\Klein {
+class Route extends \Klein\Klein {    
 
     public function get($route, $call) {
         if(is_string($call)){
@@ -10,8 +10,9 @@ class Route extends \Klein\Klein {
         	$controller = 'App\\Controllers\\' . $explode[0] . 'Controller';
         	$action = $explode[1];
         	
-        	$this->respond('GET', $route, function () use ($controller, $action) {
+        	$this->respond('GET', $route, function ($request, $response, $service, $app) use ($controller, $action) {
                 $class = new $controller();
+                $class->__loadVars($request, $response, $app);
                 return $class->$action();
             });
 

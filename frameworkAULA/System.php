@@ -50,9 +50,9 @@ class System  {
 
         // forma o namespace
     	$controller = 'App\\Controllers\\' . $this->_controller . 'Controller';
-    	$action = $this->_action;
+    	$action = $this->_action;        
 
     	$instance = new $controller();
-    	$instance->$action();    	
+    	$instance->$action();
     }
 }
